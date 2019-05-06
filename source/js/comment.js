@@ -1,0 +1,18 @@
+//comment_add
+
+//comment_list
+
+//获取地址参数
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return unescape(r[2]);
+	 return null;
+
+};
+
+
+
+$(function(){
+  // 文档就绪
+});

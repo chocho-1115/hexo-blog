@@ -1,0 +1,67 @@
+sudo npm install hexo-server --save
+
+hexo server
+
+
+hexo generate
+hexo deploy
+
+hexo clean
+
+搭建 hexo，在执行 hexo deploy 后,出现 error deployer not found:github 的错误
+解决办法：
+npm install hexo-deployer-git --save
+
+更换主题 git clone <repository> themes/<theme-name>
+
+
+$ git clone https://github.com/moretwo/hexo-theme.git themes/mabao
+
+
+CNAMEg
+g
+
+
+——————————————  mac 下 —————————————
+
+
+which node //返回node安装目录
+返回  /usr/local/bin/
+
+
+node 5.9.1
+npm 5.4.2
+
+
+单词 access  //访问
+单词 Missing  //缺少
+
+ 
+//全局安装
+npm install  webpack -g
+//安装到你的项目目录
+npm install  webpack --save-dev
+
+
+$ npm install vue
+# 全局安装 vue-cli
+$ npm install --global vue-cli
+# 创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project
+
+这个时候项目现在还只是一个结构框架，整个项目需要的依赖资源都还没有安装 需要运行  cnpm install
+安装完成之后，会在我们的项目目录firstVue文件夹中多出一个node_modules文件夹，这里边就是我们项目需要的依赖包资源。
+
+npm run dev
+这里简单介绍下 npm run dev 命令，其中的“run”对应的是package.json文件中，scripts字段中的dev，也就是 node build/dev-server.js命令的一个快捷方式。
+
+项目运行成功后，浏览器会自动打开localhost:8080
+
+cnpm run build 打包
+
+
+
+
+
+
+
