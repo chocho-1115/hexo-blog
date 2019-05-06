@@ -1,0 +1,43 @@
+# config
+cover: /blog/img/img-bg.jpg
+#logo: /blog/img/logo.svg
+logo: /blog/img/logo.svg
+bio: 
+# 在重复性、机械式工作的同时，还要求我们去独立思考问题、解决问题，不断优化工作流程，找出最优解决方案，这应该就是工作的最大乐趣了！
+
+# Content
+excerpt_link: Read More
+
+# Header  nav
+menu:
+  Home: /
+  Archive: /archive
+  Images: /images
+  Wiki: /wiki/2014-10-28-wiki/
+  Favorites: /favorites
+  Contact: /about/2014-09-11-mabao/
+
+##Private: /private
+
+# nav.fonticon.css
+navclass:
+  Home: icon-home
+  Archive: icon-news
+  Images: icon-image
+  Wiki: icon-wiki
+  Favorites: icon-Favorites
+  Contact: icon-mail
+
+##Private: icon-lock
+rss: /atom.xml
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+#duoshuo_shortname: indent.top
+#baidu_tongji: true

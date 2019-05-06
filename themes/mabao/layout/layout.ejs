@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<%- partial('casper/head') %>
+<!--<% if (typeof page.title == 'undefined') { %>
+<body class="home-template">
+<% } else { %>
+<body class="post-template">
+<% } %>-->
+<body class="home-template">
+<div id="perspective" class="perspective effect-movedown">
+  <div class="container">
+    <!-- wrapper -->
+    <div class="wrapper">
+
+      <%- partial('casper/header') %>
+      <%- body %>
+      <%- partial('casper/footer') %>
+      <%- partial('casper/after_all') %>
+
+  </div>
+</div>
+
+<nav  class="outer-nav top horizontal">
+<!--
+<% for (var i in theme.menu){ %>
+          <a class="<%- theme.navclass[i]||'default' %>"  href="<%- url_for(theme.menu[i]) %>"><span><%= i %></span></a>
+<% } %>
+-->
+<span class="tag-list-item">
+    <a class="tag-list-link" href="<%- config.root %>">全部</a><span class="tag-list-count"><%= site.posts.length %></span>
+</span>
+
+    
+<% if (site.tags.length){ %>
+      <%- list_tags() %>
+<% } %>
+
+    
+</nav>
+
+</div>
+</body>
+</html>
