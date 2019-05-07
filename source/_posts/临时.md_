@@ -1,0 +1,83 @@
+---
+title: 临时
+---
+
+### npm 的 --save 和 --save-dev 有什么区别？
+
+> 这是 npm 的命令参数，和 Vue 没有关系
+--save-dev 是作为开发依赖保存到 packsge.json 中的 devDependencies 中，即在开发环境中用到的依赖，如 webpack、babel 等用于开发打包的依赖，只是在执行打包时才会用到，开发的代码中并不包含这些依赖
+--save 安装的则是需要在你开发的代码中用到的依赖，如 vue，你需要 import Vue from vue。
+
+
+### vue(npm run dev)报错: Cannot find module 'opn'
+
+删除文件夹node_modules,再次npm install
+
+
+
+### Sublime vue代码高亮
+
+下载 [https://github.com/vuejs/vue-syntax-highlight](https://github.com/vuejs/vue-syntax-highlight)
+把下载的文件解压到Sublime Preferences->Browse Packages...所指向的文件夹（在里面见一个叫Vue的子文件夹）
+按下快捷键“ctrl+shift+p”，在打开的packages输入框中输入vue，选择“Set Syntax:Vue Component”进行加载
+加载后重启sublime，重新打开.vue文件，即能看到语法高亮。
+
+
+### vue里局部引用的样式怎么都成为全局的了？
+> 它只是把css写在了局部文件里，不代表css只作用在局部。如果你想只在组件里起作用，可以加个 scoped
+```
+<style scoped>
+/*css code*/
+</style>
+```
+
+### vue引入npm下载的jquery
+1.npm install jquery  –save 保证package.json中的dependencies里有相关信息
+2.在webpack.base.conf.js里加入：var webpack = require("webpack")
+3.在module.exports的最后加入
+```
+plugins: [
+ new webpack.optimize.CommonsChunkPlugin('common.js'),
+ new webpack.ProvidePlugin({
+     jQuery: "jquery",
+     $: "jquery"
+ })
+]
+```
+4.在需要用到jquery的模块里引入jq：
+```
+<script>
+
+import $ from 'jquery'
+console.log($('#app'))
+
+...
+</script>
+```
+5.重启服务 npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
