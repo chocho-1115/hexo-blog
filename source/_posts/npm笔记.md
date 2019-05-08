@@ -22,7 +22,12 @@ tags: [笔记]
 [参考](https://www.cnblogs.com/ganiks/p/stack-error-eacces-denied-node-gyp.html)
 
 
+### 升级所有的依赖包
+npm install -g npm-check-updates //安装npm-check-updates
 
+ncu //检查更新
+
+ncu -u //更新package.json
 
 
 
