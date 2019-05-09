@@ -19,6 +19,9 @@ tags: hexo
 * 丰富的插件支持
 * hexo依赖Node.js和Git
 
+##### 错误记录
+[Win10 64位系统下,Hexo出现警告DEP0061,hexo-fs](https://blog.csdn.net/u012995964/article/details/80670343)
+
 ### 部署
 ##### 安装
 hexo依赖Node.js和Git，所以这两个必须已经安装，然后用下面命令安装hexo：
