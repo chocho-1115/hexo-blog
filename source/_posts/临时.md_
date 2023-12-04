@@ -1,6 +1,84 @@
 ---
-title: 临时
+title: 
+tags: [笔记]
+date: 2030-12-03 15:39:25 
+updated: 2030-01-22 15:39:25
+dataid : 123
 ---
+
+
+
+通过ncu升级依赖包
+
+"webpack": "^5.35.1",
+"webpack-cli": "^4.6.0",
+"webpack-dev-server": "^3.11.2"
+
+错误
+Error: Cannot find module 'webpack-cli/bin/config-yargs'
+
+解决
+https://www.cnblogs.com/jeacy/p/13864454.html
+
+webpack-dev-server
+的命令 
+webpack-dev-server 改为了 webpack serve
+
+
+
+同时你会发现
+webpack-cli@3.3.12 版本是下载量最多的
+https://www.npmjs.com/package/webpack-cli/v/3.3.12
+
+
+
+webpack5中打包html中的img图片不显示
+https://blog.csdn.net/m0_46333501/article/details/115084175
+
+
+
+
+
+----------------
+
+
+
+https://www.cnblogs.com/xyzhanjiang/p/13272975.html
+
+sudo cnpm install vue@next -S
+sudo cnpm vue-loader@16.0.0-beta.4 -D 当前需要自行指定版本 VueLoaderPlugin 的导入方式改变了
+sudo cnpm @vue/compiler-sfc -D vue-template-compiler 没有了，新增了 @vue/compiler-sfc
+sudo cnpm install vue-router@next -S
+
+
+Vue3中的Vue Router初探
+https://www.imooc.com/article/304187
+
+https://next.router.vuejs.org
+https://router.vuejs.org/zh/guide/essentials/history-mode.html#后端配置例子
+
+
+
+
+
+
+vue-template-compiler 没有了，新增了 @vue/compiler-sfc
+
+
+webpack配置vue组件加载器
+https://blog.csdn.net/qq_42709302/article/details/108106991
+
+每个 vue 包的新版本发布时，一个相应版本的 vue-template-compiler 也会随之发布。编译器的版本必须和基本的 vue 包保持同步，这样 vue-loader 就会生成兼容运行时的代码。这意味着你每次升级项目中的 vue 包时，也应该匹配升级 vue-template-compiler。
+
+https://vue-loader.vuejs.org/zh/guide/#手动设置
+
+
+
+
+npm vue-template-es2015-compiler 与 vue-template-compiler
+
+
+
 
 ### npm 的 --save 和 --save-dev 有什么区别？
 
@@ -47,7 +125,7 @@ plugins: [
 4.在需要用到jquery的模块里引入jq：
 ```
 <script>
-
+.
 import $ from 'jquery'
 console.log($('#app'))
 
@@ -55,6 +133,14 @@ console.log($('#app'))
 </script>
 ```
 5.重启服务 npm run dev
+
+
+
+命令行笔记
+
+vi [文件名]
+按【i】为输入内容，编辑好之后按【esc】键，然后输入【:wq】，回车即可保存
+
 
 
 

@@ -15,7 +15,6 @@ keywords: 个人网站
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://indent.top/blog
 #root: /blog/
-root: /blog/
 #my_module: /my_module/comment
 #my_module: /themes/mabao/layout/casper/post/comment.ejs
 #my_module: post/comment
